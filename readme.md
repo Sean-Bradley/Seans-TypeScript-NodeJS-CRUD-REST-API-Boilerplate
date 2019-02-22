@@ -12,11 +12,16 @@ npm install
 npm run dev
 ```
 
+Then visit `http://localhost:3000/cats`
+
 ### Run without nodemon and tsc --watch
 
 ```bash
 npm start
 ```
+
+Then visit `http://localhost:3000/cats`
+
 
 ## Usage
 
@@ -38,4 +43,3 @@ npm start
 
 ### Delete Record
 ![Example Delete](delete-example.png)
-
