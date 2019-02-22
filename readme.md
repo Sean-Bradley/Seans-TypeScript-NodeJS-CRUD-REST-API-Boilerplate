@@ -30,7 +30,7 @@ Then visit `http://localhost:3000/cats`
 
 
 ### Post (Create) Record
-![Example Post (Create) new record](get-example.png)
+![Example Post (Create) new record](post-example.png)
 
 
 ### Get by Id
