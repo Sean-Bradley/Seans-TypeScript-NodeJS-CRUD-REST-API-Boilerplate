@@ -12,9 +12,12 @@ npm install
 npm run dev
 ```
 
+Then visit `http://localhost:3000`
+
 ### Run without nodemon and tsc --watch
 
 ```bash
 npm start
 ```
 
+Then visit `http://localhost:3000`
