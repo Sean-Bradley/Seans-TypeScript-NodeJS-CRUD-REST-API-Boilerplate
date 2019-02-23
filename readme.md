@@ -26,20 +26,20 @@ Then visit `http://localhost:3000/cats`
 ## Usage
 
 ### List all records
-![Example Get all records](get-example.png)
+![Example Get all records](docs/get-example.png)
 
 
 ### Post (Create) Record
-![Example Post (Create) new record](post-example.png)
+![Example Post (Create) new record](docs/post-example.png)
 
 
 ### Get by Id
-![Example Get by ID](get-id-example.png)
+![Example Get by ID](docs/get-id-example.png)
 
 
 ### Put (Update) Record
-![Example Put (Update)](put-example.png)
+![Example Put (Update)](docs/put-example.png)
 
 
 ### Delete Record
-![Example Delete](delete-example.png)
+![Example Delete](docs/delete-example.png)

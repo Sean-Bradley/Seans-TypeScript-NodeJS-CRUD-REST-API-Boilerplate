@@ -1,7 +1,9 @@
-import * as express from 'express'
+import express from 'express'
 import Cat from './models/Cat'
 import { v4 as uuid } from 'uuid';
+import cors from 'cors'
 import * as bodyParser from 'body-parser'
+
 
 class Router {
 
@@ -19,14 +21,14 @@ class Router {
         })
 
         //get all cats
-        router.get('/cats', (req: express.Request, res: express.Response) => {
+        router.get('/cats', cors(), (req: express.Request, res: express.Response) => {
             res.json({
                 cats
             })
         })
 
         //create new cat
-        router.post('/cats', (req: express.Request, res: express.Response) => {
+        router.post('/cats', cors(), (req: express.Request, res: express.Response) => {
             try {
                 let cat: Cat = {} as Cat;
                 Object.assign(cat, req.body)
@@ -36,54 +38,52 @@ class Router {
                     uuid: newUUID
                 })
             } catch (e) {
-                res.json({
-                    error: "problem with post"
-                })
+                res.status(400).send(JSON.stringify({ "error": "problem with posted data" }));
             }
         })
 
         //get cat by id
-        router.get('/cats/:id', (req: express.Request, res: express.Response) => {
+        router.get('/cats/:id', cors(), (req: express.Request, res: express.Response) => {
             if (!!cats[req.params.id]) {
                 res.json({
                     cat: cats[req.params.id]
                 })
             } else {
-                res.json({
-                    error: "no such cat"
-                })
+                res.status(404).send(JSON.stringify({ "error": "no such cat" }));
             }
         })
 
         //update cat
-        router.put('/cats/:id', (req: express.Request, res: express.Response) => {
-            if (!!cats[req.params.id]) {
-                let cat: Cat = {} as Cat;
-                Object.assign(cat, req.body)
-                cats[req.params.id] = cat;
-                res.json({
-                    cat: cats[req.params.id]
-                })
-            } else {
-                res.json({
-                    error: "no such cat"
-                })
+        router.put('/cats/:id', cors(), (req: express.Request, res: express.Response) => {
+            try {
+                if (!!cats[req.params.id]) {
+                    let cat: Cat = {} as Cat;
+                    Object.assign(cat, req.body)
+                    cats[req.params.id] = cat;
+                    res.json({
+                        cat: cats[req.params.id]
+                    })
+                } else {
+                    res.status(404).send(JSON.stringify({ "error": "no such cat" }));
+                }
+            } catch (e) {
+                res.status(400).send(JSON.stringify({ "error": "problem with posted data" }));
             }
         })
 
         //delete cat
-        router.delete('/cats/:id', (req: express.Request, res: express.Response) => {
+        router.delete('/cats/:id', cors(), (req: express.Request, res: express.Response) => {
             if (!!cats[req.params.id]) {
                 delete cats[req.params.id]
                 res.json({
                     uuid: req.params.id
                 })
             } else {
-                res.json({
-                    error: "no such cat"
-                })
+                res.status(404).send(JSON.stringify({ "error": "no such cat" }));
             }
         });
+
+        router.options('*', cors());
 
         server.use(bodyParser.urlencoded({ extended: true }));
         server.use(bodyParser.json());

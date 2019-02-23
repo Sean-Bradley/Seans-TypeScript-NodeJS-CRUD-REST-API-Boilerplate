@@ -2,6 +2,8 @@
   "compilerOptions": {
     "target": "es2017",
     "module": "commonjs",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
     "outDir": "dist",
     "sourceMap": true
   },
