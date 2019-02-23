@@ -1,190 +1,190 @@
 {
-  "swagger": "2.0",
-  "info": {
-    "version": "1.0.0",
-    "title": "Seans-TypeScript-NodeJS-CRUD-REST-API-Boilerplate",
-    "description": "A minimal and easy to follow example of what you need to create a CRUD style API in NodeJs using TypeScript",
-    "license": {
-      "name": "MIT",
-      "url": "https://opensource.org/licenses/MIT"
-    }
-  },
-  "host": "localhost:3000",
-  "basePath": "",
-  "tags": [
-    {
-      "name": "Cats",
-      "description": "API for cats in the system"
-    }
-  ],
-  "schemes": [
-    "http"
-  ],
-  "consumes": [
-    "application/json"
-  ],
-  "produces": [
-    "application/json"
-  ],
-  "paths": {
-    "/cats": {
-      "get": {
-        "tags": [
-          "Cats"
-        ],
-        "summary": "Get all cats in system",
-        "responses": {
-          "200": {
-            "description": "OK",
-            "schema": {
-              "$ref": "#/definitions/Cats"
-            }
-          }
+    "swagger": "2.0",
+    "info": {
+        "version": "1.0.0",
+        "title": "Seans-TypeScript-NodeJS-CRUD-REST-API-Boilerplate",
+        "description": "A minimal and easy to follow example of what you need to create a CRUD style API in NodeJs using TypeScript",
+        "license": {
+            "name": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
         }
-      },
-      "post": {
-        "tags": [
-          "Cats"
-        ],
-        "summary": "Create a new cat in system",
-        "parameters": [
-          {
-            "in": "body",
-            "name": "body",
-            "description": "Cat that we want to create",
-            "schema": {
-              "$ref": "#/definitions/Cat"
-            }
-          }
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "schema": {
-              "$ref": "#/definitions/id"
-            }
-          },
-          "400": {
-            "description": "Failed. Bad post data."
-          }
-        }
-      }
     },
-    "/cats/{id}": {
-      "parameters": [
+    "host": "localhost:3000",
+    "basePath": "",
+    "tags": [
         {
-          "name": "id",
-          "in": "path",
-          "required": true,
-          "description": "ID of the cat that we want to match",
-          "type": "string"
+            "name": "Cats",
+            "description": "API for cats in the system"
         }
-      ],
-      "get": {
-        "tags": [
-          "Cats"
-        ],
-        "summary": "Get cat with given ID",
-        "responses": {
-          "200": {
-            "description": "OK",
-            "schema": {
-              "$ref": "#/definitions/Cat"
+    ],
+    "schemes": [
+        "http"
+    ],
+    "consumes": [
+        "application/json"
+    ],
+    "produces": [
+        "application/json"
+    ],
+    "paths": {
+        "/cats": {
+            "get": {
+                "tags": [
+                    "Cats"
+                ],
+                "summary": "Get all cats in system",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/Cats"
+                        }
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "Cats"
+                ],
+                "summary": "Create a new cat in system",
+                "parameters": [
+                    {
+                        "in": "body",
+                        "name": "body",
+                        "description": "Cat that we want to create",
+                        "schema": {
+                            "$ref": "#/definitions/Cat"
+                        }
+                    }
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/id"
+                        }
+                    },
+                    "400": {
+                        "description": "Failed. Bad post data."
+                    }
+                }
             }
-          },
-          "404": {
-            "description": "Failed. Cat not found."
-          }
-        }
-      },
-      "delete": {
-        "summary": "Delete cat with given ID",
-        "tags": [
-          "Cats"
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "schema": {
-              "$ref": "#/definitions/id"
+        },
+        "/cats/{id}": {
+            "parameters": [
+                {
+                    "name": "id",
+                    "in": "path",
+                    "required": true,
+                    "description": "ID of the cat that we want to match",
+                    "type": "string"
+                }
+            ],
+            "get": {
+                "tags": [
+                    "Cats"
+                ],
+                "summary": "Get cat with given ID",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/Cat"
+                        }
+                    },
+                    "404": {
+                        "description": "Failed. Cat not found."
+                    }
+                }
+            },
+            "put": {
+                "summary": "Update cat with given ID",
+                "tags": [
+                    "Cats"
+                ],
+                "parameters": [
+                    {
+                        "in": "body",
+                        "name": "body",
+                        "required": true,
+                        "description": "Cat with new values of properties",
+                        "schema": {
+                            "$ref": "#/definitions/Cat"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/Cat"
+                        }
+                    },
+                    "400": {
+                        "description": "Failed. Bad post data."
+                    },
+                    "404": {
+                        "description": "Failed. Cat not found."
+                    }
+                }
+            },
+            "delete": {
+                "summary": "Delete cat with given ID",
+                "tags": [
+                    "Cats"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/id"
+                        }
+                    },
+                    "404": {
+                        "description": "Failed. Cat not found."
+                    }
+                }
             }
-          },
-          "404": {
-            "description": "Failed. Cat not found."
-          }
         }
-      },
-      "put": {
-        "summary": "Update cat with give ID",
-        "tags": [
-          "Cats"
-        ],
-        "parameters": [
-          {
-            "in": "body",
-            "name": "body",
-            "required": true,
-            "description": "Cat with new values of properties",
-            "schema": {
-              "$ref": "#/definitions/Cat"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "schema": {
-              "$ref": "#/definitions/Cat"
-            }
-          },
-          "400": {
-            "description": "Failed. Bad post data."
-          },
-          "404": {
-            "description": "Failed. Cat not found."
-          }
-        }
-      }
-    }
-  },
-  "definitions": {
-    "id": {
-      "properties": {
-        "uuid": {
-          "type": "string"
-        }
-      }
     },
-    "Cat": {
-      "type": "object",
-      "properties": {
-        "genus": {
-          "type": "string"
+    "definitions": {
+        "id": {
+            "properties": {
+                "uuid": {
+                    "type": "string"
+                }
+            }
         },
-        "name": {
-          "type": "string"
+        "Cat": {
+            "type": "object",
+            "properties": {
+                "genus": {
+                    "type": "string"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "isHungry": {
+                    "type": "boolean"
+                },
+                "lastFedDate": {
+                    "type": "string"
+                }
+            }
         },
-        "isHungry": {
-          "type": "boolean"
-        },
-        "lastFedDate": {
-          "type": "string"
+        "Cats": {
+            "type": "object",
+            "properties": {
+                "cats": {
+                    "type": "object",
+                    "additionalProperties": {
+                        "$ref": "#/definitions/Cat"
+                    }
+                }
+            }
         }
-      }
-    },
-    "Cats": {
-      "type": "object",
-      "properties": {
-        "cats": {
-          "type": "object",
-          "additionalProperties": {
-            "$ref": "#/definitions/Cat"
-          }
-        }
-      }
     }
-  }
 }
