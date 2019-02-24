@@ -1,5 +1,5 @@
 {
-    "swagger": "2.0",
+    "openapi": "3.0.0",
     "info": {
         "version": "1.0.0",
         "title": "Seans-TypeScript-NodeJS-CRUD-REST-API-Boilerplate",
@@ -9,16 +9,21 @@
             "url": "https://opensource.org/licenses/MIT"
         }
     },
-    "host": "localhost:3000",
-    "basePath": "",
+    "servers": [
+        {
+            "url": "/",
+            "description": "Local Dev"
+        },
+        {
+            "url": "/v1.0.1/",
+            "description": "With docker-compose and nginx proxy"
+        }
+    ],
     "tags": [
         {
             "name": "Cats",
             "description": "API for cats in the system"
         }
-    ],
-    "schemes": [
-        "http"
     ],
     "consumes": [
         "application/json"

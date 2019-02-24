@@ -1,0 +1,50 @@
+image: docker:latest
+services:
+  - docker:dind
+
+stages:
+  - deploy
+
+step-deploy-uat:
+  stage: deploy
+  only:
+    - uat
+  tags:
+    - uat
+  script:
+    - sudo apt-get install -y python-pip
+    - pip install docker-compose
+    - sudo docker image prune -f
+    - sudo docker-compose -f docker-compose.yml build --no-cache
+    - sudo docker-compose -f docker-compose.yml up -d
+
+    #test the default url
+    - 'curl -k https://127.0.0.1/'
+    #test the api root
+    - 'curl -k https://127.0.0.1/api'
+    #test the getting some cats
+    - 'curl -k https://127.0.0.1/api/cats'
+
+step-deploy-prod:
+  stage: deploy
+  only:
+    - production
+  tags:
+    - production
+  script:
+    - sudo apt-get install -y python-pip
+    - pip install docker-compose
+    - sudo docker image prune -f
+    - sudo docker-compose -f docker-compose.yml build --no-cache
+    - sudo docker-compose -f docker-compose.yml up -d
+
+    #test the default url
+    - 'curl -k https://127.0.0.1/'
+    #test the api root
+    - 'curl -k https://127.0.0.1/api'
+    #test the getting some cats
+    - 'curl -k https://127.0.0.1/api/cats'
+  when: manual
+
+
+

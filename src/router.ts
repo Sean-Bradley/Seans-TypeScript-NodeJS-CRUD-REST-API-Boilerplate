@@ -15,7 +15,7 @@ class Router {
 
         router.get('/', (req: express.Request, res: express.Response) => {
             res.json({
-                message: 'Nothing to see here, goto \'/cats\' instead'
+                message: `Nothing to see here, [url]/cats instead`
             })
         })
 
