@@ -3,47 +3,45 @@ services:
   - docker:dind
 
 stages:
+  - test
   - deploy
 
-step-deploy-uat:
-  stage: deploy
-  only:
-    - uat
-  tags:
-    - uat
+step-test:
+  stage: test
   script:
+    - echo run tests here if you want
+
+step-deploy-staging:
+  stage: deploy
+  before_script:
+    - export DYNAMIC_ENV_VAR=STAGING
+  only:
+    - staging
+  tags:
+    - staging
+  script:
+    - echo setting up env $DYNAMIC_ENV_VAR
     - sudo apt-get install -y python-pip
     - sudo pip install docker-compose
     - sudo docker image prune -f
     - sudo docker-compose -f docker-compose.yml build --no-cache
     - sudo docker-compose -f docker-compose.yml up -d
 
-    #test the default url
-    - 'curl -k http://127.0.0.1/'
-    #test the api root
-    - 'curl -k http://127.0.0.1/api'
-    #test the getting some cats
-    - 'curl -k http://127.0.0.1/api/cats'
-
 step-deploy-prod:
   stage: deploy
+  before_script:
+    - export DYNAMIC_ENV_VAR=PRODUCTION
   only:
     - production
   tags:
     - production
   script:
+    - echo setting up env $DYNAMIC_ENV_VAR
     - sudo apt-get install -y python-pip
     - pip install docker-compose
     - sudo docker image prune -f
     - sudo docker-compose -f docker-compose.yml build --no-cache
     - sudo docker-compose -f docker-compose.yml up -d
-
-    #test the default url
-    - 'curl -k https://127.0.0.1/'
-    #test the api root
-    - 'curl -k https://127.0.0.1/api'
-    #test the getting some cats
-    - 'curl -k https://127.0.0.1/api/cats'
   when: manual
 
 
