@@ -7,7 +7,7 @@ COPY tsconfig.json /nodejs/tsconfig.json
 
 WORKDIR /nodejs
 RUN npm install
-COPY dist /dist
+COPY nodejs/dist /dist
 
 RUN ls
 
