@@ -19,11 +19,11 @@ step-deploy-uat:
     - sudo docker-compose -f docker-compose.yml up -d
 
     #test the default url
-    - 'curl -k https://127.0.0.1/'
+    - 'curl -k http://127.0.0.1/'
     #test the api root
-    - 'curl -k https://127.0.0.1/api'
+    - 'curl -k http://127.0.0.1/api'
     #test the getting some cats
-    - 'curl -k https://127.0.0.1/api/cats'
+    - 'curl -k http://127.0.0.1/api/cats'
 
 step-deploy-prod:
   stage: deploy
