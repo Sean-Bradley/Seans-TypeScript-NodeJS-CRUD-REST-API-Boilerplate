@@ -4,10 +4,12 @@ LABEL Sean Bradley <seanwasere@gmail.com>
 
 COPY package.json /nodejs/package.json
 COPY tsconfig.json /nodejs/tsconfig.json
+
+RUN npm install
 COPY dist /nodejs/dist
 WORKDIR /nodejs
 
-RUN npm install
+
 RUN ls
 
 
