@@ -43,3 +43,12 @@ Then visit `http://localhost:3000/cats`
 
 ### Delete Record
 ![Example Delete](docs/delete-example.png)
+
+
+## Swagger
+
+Visit `http://localhost:3000/swagger` to view the OPENAPI document in Swagger-UI
+
+### Video tutorial on setting up Swagger in an existing NodeJS TypeScript API
+[![Add Swagger-UI Documentation To Existing NodeJS TypeScript API](https://img.youtube.com/vi/qemG0CWOx1I/0.jpg)](https://youtu.be/qemG0CWOx1I)
+
