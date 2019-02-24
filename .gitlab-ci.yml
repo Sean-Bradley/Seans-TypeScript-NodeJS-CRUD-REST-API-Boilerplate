@@ -17,16 +17,21 @@ step-develop:
   script:
     - echo running tests in $DYNAMIC_ENV_VAR
 
-step-test:
-  stage: test
+step-uat:
+  stage: deploy
   before_script:
-    - export DYNAMIC_ENV_VAR=TESTING
+    - export DYNAMIC_ENV_VAR=UAT
   only:
-    - testing
+    - uat
   tags:
-    - testing
+    - uat
   script:
-    - echo running tests in $DYNAMIC_ENV_VAR
+    - echo setting up env $DYNAMIC_ENV_VAR
+    - sudo apt-get install -y python-pip
+    - sudo pip install docker-compose
+    - sudo docker image prune -f
+    - sudo docker-compose -f docker-compose.yml build --no-cache
+    - sudo docker-compose -f docker-compose.yml up -d
 
 step-deploy-staging:
   stage: deploy
