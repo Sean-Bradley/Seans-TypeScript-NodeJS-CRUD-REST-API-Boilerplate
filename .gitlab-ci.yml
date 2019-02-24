@@ -49,7 +49,7 @@ step-deploy-staging:
     - sudo docker-compose -f docker-compose.yml build --no-cache
     - sudo docker-compose -f docker-compose.yml up -d
 
-step-deploy-prod:
+step-deploy-production:
   stage: deploy
   before_script:
     - export DYNAMIC_ENV_VAR=PRODUCTION
