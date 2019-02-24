@@ -15,7 +15,7 @@
             "description": "Local Dev"
         },
         {
-            "url": "/v1.0.1/",
+            "url": "/api/",
             "description": "With docker-compose and nginx proxy"
         }
     ],
