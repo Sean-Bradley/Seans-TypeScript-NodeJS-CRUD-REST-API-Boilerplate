@@ -6,10 +6,27 @@ stages:
   - test
   - deploy
 
+step-develop:
+  stage: test
+  before_script:
+    - export DYNAMIC_ENV_VAR=DEVELOP
+  only:
+    - develop
+  tags:
+    - develop
+  script:
+    - echo running tests in $DYNAMIC_ENV_VAR
+
 step-test:
   stage: test
+  before_script:
+    - export DYNAMIC_ENV_VAR=TESTING
+  only:
+    - testing
+  tags:
+    - testing
   script:
-    - echo run tests here if you want
+    - echo running tests in $DYNAMIC_ENV_VAR
 
 step-deploy-staging:
   stage: deploy
