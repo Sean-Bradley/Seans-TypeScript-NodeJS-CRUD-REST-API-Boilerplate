@@ -60,7 +60,7 @@ step-deploy-production:
   script:
     - echo setting up env $DYNAMIC_ENV_VAR
     - sudo apt-get install -y python-pip
-    - pip install docker-compose
+    - sudo pip install docker-compose
     - sudo docker image prune -f
     - sudo docker-compose -f docker-compose.yml build --no-cache
     - sudo docker-compose -f docker-compose.yml up -d
