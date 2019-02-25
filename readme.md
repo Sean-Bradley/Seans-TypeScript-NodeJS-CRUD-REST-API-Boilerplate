@@ -32,6 +32,10 @@ Visit `http://localhost:3000/swagger` to view the OPENAPI document in Swagger-UI
 ### Video tutorial on setting up Swagger in an existing NodeJS TypeScript API
 [![Add Swagger-UI Documentation To Existing NodeJS TypeScript API](https://img.youtube.com/vi/qemG0CWOx1I/0.jpg)](https://youtu.be/qemG0CWOx1I)
 
+## Continuous Integration and Deployment
+I've also added gitlab-ci.yml and dockerised with Docker-Compose. See video tutorial on how all this works.
+[![CI/CD a NodeJS API with Docker-Compose and GitLab](https://img.youtube.com/vi/Qlj6NiOy5jM/0.jpg)](https://youtu.be/Qlj6NiOy5jM)
+
 ## Usage
 
 ### List all records
