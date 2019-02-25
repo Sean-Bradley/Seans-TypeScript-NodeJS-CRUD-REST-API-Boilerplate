@@ -29,7 +29,6 @@ step-uat:
     - echo setting up env $DYNAMIC_ENV_VAR
     - sudo apt-get install -y python-pip
     - sudo pip install docker-compose
-    - sudo apt install docker
     - sudo docker image prune -f
     - sudo docker-compose -f docker-compose.yml build --no-cache
     - sudo docker-compose -f docker-compose.yml up -d
@@ -46,7 +45,7 @@ step-deploy-staging:
     - echo setting up env $DYNAMIC_ENV_VAR
     - sudo apt-get install -y python-pip
     - sudo pip install docker-compose
-    - sudo pip install docker
+    - sudo apt install docker.io  
     - sudo docker image prune -f
     - sudo docker-compose -f docker-compose.yml build --no-cache
     - sudo docker-compose -f docker-compose.yml up -d
@@ -63,7 +62,6 @@ step-deploy-production:
     - echo setting up env $DYNAMIC_ENV_VAR
     - sudo apt-get install -y python-pip
     - pip install docker-compose
-    - sudo apt install docker
     - sudo docker image prune -f
     - sudo docker-compose -f docker-compose.yml build --no-cache
     - sudo docker-compose -f docker-compose.yml up -d
