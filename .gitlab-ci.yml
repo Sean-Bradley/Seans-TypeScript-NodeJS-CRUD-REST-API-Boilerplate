@@ -45,9 +45,9 @@ step-deploy-staging:
     - echo setting up env $DYNAMIC_ENV_VAR
     - sudo apt-get install -y python-pip
     - pip install docker-compose
-    - sudo docker image prune -f || true
-    - sudo docker-compose -f docker-compose.yml build --no-cache
-    - sudo docker-compose -f docker-compose.yml up -d
+    - docker image prune -f || true
+    - docker-compose -f docker-compose.yml build --no-cache
+    - docker-compose -f docker-compose.yml up -d
 
 step-deploy-production:
   stage: deploy
