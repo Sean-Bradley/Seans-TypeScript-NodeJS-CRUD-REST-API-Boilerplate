@@ -1,21 +1,23 @@
 version: '2'
 services:
-  nginx:
-    build: 
-      context: nginx
-      dockerfile: Dockerfile
-    ports:
-      - "80:80"
-    command: nginx -g "daemon off";
-    depends_on:
-      - nodejs
+  # nginx:
+  #   build: 
+  #     context: nginx
+  #     dockerfile: Dockerfile
+  #   ports:
+  #     - "80:80"
+  #   command: nginx -g "daemon off";
+  #   depends_on:
+  #     - nodejs
       
   nodejs:
     build:
       context: .
       dockerfile: Dockerfile
-    expose:
-      - "3000"
+    #expose:
+    #  - "3000"
+    ports:
+      - "3000:3000"
     command: npm start
 
 
