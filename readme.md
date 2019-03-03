@@ -57,6 +57,3 @@ I've also added gitlab-ci.yml and dockerised with Docker-Compose. See video tuto
 ### Delete Record
 ![Example Delete](docs/delete-example.png)
 
-
-
-
