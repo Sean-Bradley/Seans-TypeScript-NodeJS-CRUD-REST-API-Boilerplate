@@ -12,7 +12,7 @@
     "servers": [
         {
             "url": "/",
-            "description": "Local Dev"
+            "description": "Local Dev, or from Heroku"
         },
         {
             "url": "/api/",

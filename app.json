@@ -1,0 +1,7 @@
+{
+    "name": "seans-typescript-nodejs-crud-rest-api-boilerplate",
+    "description": "A barebones TypeScript Node.js CRUD REST API",
+    "repository": "https://github.com/Sean-Bradley/Seans-TypeScript-NodeJS-CRUD-REST-API-Boilerplate",
+    "logo": "https://github.com/Sean-Bradley/Seans-TypeScript-NodeJS-CRUD-REST-API-Boilerplate/blob/master/cosmo1.png",
+    "keywords": ["node", "typescript", "crud", "seanwasere"]
+  }

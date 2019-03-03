@@ -36,6 +36,14 @@ Visit `http://localhost:3000/swagger` to view the OPENAPI document in Swagger-UI
 I've also added gitlab-ci.yml and dockerised with Docker-Compose. See video tutorial on how all this works.
 [![CI/CD a NodeJS API with Docker-Compose and GitLab](https://img.youtube.com/vi/Qlj6NiOy5jM/0.jpg)](https://youtu.be/Qlj6NiOy5jM)
 
+## Heroku
+You can also test this on heroku
+https://seans-typescript-nodejs-crud.herokuapp.com/cats
+or Swagger
+https://seans-typescript-nodejs-crud.herokuapp.com/swagger
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Sean-Bradley/Seans-TypeScript-NodeJS-CRUD-REST-API-Boilerplate)
+
 ## Usage
 
 ### List all records
