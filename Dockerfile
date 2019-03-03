@@ -1,4 +1,4 @@
-FROM node:alpine
+FROM node:8.5.0
 
 LABEL Sean Bradley <seanwasere@gmail.com>
 
@@ -8,6 +8,7 @@ COPY dist /nodejs/dist
 
 WORKDIR /nodejs
 
+EXPOSE 3000
+
 RUN npm install
 
-EXPOSE 3000:3000
