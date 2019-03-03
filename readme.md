@@ -39,8 +39,10 @@ I've also added gitlab-ci.yml and dockerised with Docker-Compose. See video tuto
 ## Heroku
 You can also test this on heroku
 https://seans-typescript-nodejs-crud.herokuapp.com/cats
-or Swagger
+
+and view the Swagger-UI
 https://seans-typescript-nodejs-crud.herokuapp.com/swagger
+
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Sean-Bradley/Seans-TypeScript-NodeJS-CRUD-REST-API-Boilerplate)
 
