@@ -2,7 +2,6 @@ import * as express from 'express'
 import Cat from './models/Cat'
 import { v4 as uuid } from 'uuid';
 import cors from 'cors'
-import * as bodyParser from 'body-parser'
 
 class Router {
 
@@ -84,8 +83,6 @@ class Router {
 
         router.options('*', cors());
 
-        server.use(bodyParser.urlencoded({ extended: true }));
-        server.use(bodyParser.json());
         server.use('/', router)
     }
 }

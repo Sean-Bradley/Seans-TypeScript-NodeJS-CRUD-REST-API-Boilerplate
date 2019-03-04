@@ -52,16 +52,17 @@
                     "Cats"
                 ],
                 "summary": "Create a new cat in system",
-                "parameters": [
-                    {
-                        "in": "body",
-                        "name": "body",
-                        "description": "Cat that we want to create",
-                        "schema": {
-                            "$ref": "#/definitions/Cat"
+                "requestBody": {
+                    "description": "Cat Object",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/definitions/Cat"
+                            }
                         }
                     }
-                ],
+                },
                 "produces": [
                     "application/json"
                 ],
@@ -93,6 +94,17 @@
                     "Cats"
                 ],
                 "summary": "Get cat with given ID",
+                "parameters": [
+                    {
+                        "in": "path",
+                        "name": "id",
+                        "required": true,
+                        "description": "Cat with id",
+                        "schema": {
+                            "$ref": "#/definitions/id"
+                        }
+                    }
+                ],
                 "responses": {
                     "200": {
                         "description": "OK",
@@ -110,14 +122,25 @@
                 "tags": [
                     "Cats"
                 ],
+                "requestBody": {
+                    "description": "Cat Object",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/definitions/Cat"
+                            }
+                        }
+                    }
+                },
                 "parameters": [
                     {
-                        "in": "body",
-                        "name": "body",
+                        "in": "path",
+                        "name": "id",
                         "required": true,
                         "description": "Cat with new values of properties",
                         "schema": {
-                            "$ref": "#/definitions/Cat"
+                            "$ref": "#/definitions/id"
                         }
                     }
                 ],
@@ -140,6 +163,17 @@
                 "summary": "Delete cat with given ID",
                 "tags": [
                     "Cats"
+                ],
+                "parameters": [
+                    {
+                        "in": "path",
+                        "name": "id",
+                        "required": true,
+                        "description": "Delete Cat with id",
+                        "schema": {
+                            "$ref": "#/definitions/id"
+                        }
+                    }
                 ],
                 "responses": {
                     "200": {

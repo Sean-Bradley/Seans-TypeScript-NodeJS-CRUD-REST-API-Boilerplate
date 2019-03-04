@@ -13,7 +13,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const express = __importStar(require("express"));
 const uuid_1 = require("uuid");
 const cors_1 = __importDefault(require("cors"));
-const bodyParser = __importStar(require("body-parser"));
 class Router {
     constructor(server) {
         const router = express.Router();
@@ -22,7 +21,7 @@ class Router {
         cats[uuid_1.v4()] = { genus: "feline", name: "Emmy", isHungry: true, lastFedDate: new Date() };
         router.get('/', (req, res) => {
             res.json({
-                message: `Nothing to see here, [url]/cats instead`
+                message: `Nothing to see here, [url]/cats instead.`
             });
         });
         //get all cats
@@ -89,8 +88,6 @@ class Router {
             }
         });
         router.options('*', cors_1.default());
-        server.use(bodyParser.urlencoded({ extended: true }));
-        server.use(bodyParser.json());
         server.use('/', router);
     }
 }
