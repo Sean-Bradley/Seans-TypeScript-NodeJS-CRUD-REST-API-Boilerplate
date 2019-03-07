@@ -46,7 +46,7 @@ https://seans-typescript-nodejs-crud.herokuapp.com/swagger
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Sean-Bradley/Seans-TypeScript-NodeJS-CRUD-REST-API-Boilerplate)
 
-## Usage
+## Postman
 
 ### List all records
 ![Example Get all records](docs/get-example.png)
