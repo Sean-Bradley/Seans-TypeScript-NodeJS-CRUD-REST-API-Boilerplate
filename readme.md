@@ -1,5 +1,14 @@
 ## Seans-TypeScript-NodeJS-CRUD-REST-API-Boilerplate 
 
+### MIT License
+Rememeber, No guarantees, or even fit for a particular purpose.
+
+This project will be updated slowly as required, so stay tuned.
+
+If you have a suggestion, or you want to contribute some code, you are free to make a pull request.
+
+Your contributions will be visible since this project is public.
+
 ### Setup
 
 ```bash
