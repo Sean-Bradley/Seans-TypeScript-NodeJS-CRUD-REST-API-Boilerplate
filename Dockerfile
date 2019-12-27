@@ -1,6 +1,6 @@
 FROM node:alpine
 
-LABEL Sean Bradley <seanwasere@gmail.com>
+LABEL https://github.com/Sean-Bradley
 
 COPY package.json /nodejs/package.json
 COPY tsconfig.json /nodejs/tsconfig.json
