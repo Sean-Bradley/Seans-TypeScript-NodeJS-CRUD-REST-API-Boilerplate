@@ -12,4 +12,3 @@ const server = new app_1.default().Start(port)
     process.exit(1);
 });
 exports.default = server;
-//# sourceMappingURL=server.js.map

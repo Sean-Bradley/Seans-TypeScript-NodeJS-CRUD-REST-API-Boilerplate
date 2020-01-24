@@ -1,9 +1,7 @@
 ## Seans-TypeScript-NodeJS-CRUD-REST-API-Boilerplate 
 
 ### MIT License
-Rememeber, No guarantees, or even fit for a particular purpose.
-
-This project will be updated slowly as required, so stay tuned.
+Remember, No guarantees, or even fit for a particular purpose.
 
 If you have a suggestion, or you want to contribute some code, you are free to make a pull request.
 
@@ -75,4 +73,12 @@ https://seans-typescript-nodejs-crud.herokuapp.com/swagger
 
 ### Delete Record
 ![Example Delete](docs/delete-example.png)
+
+# TypeScript Socket.IO Course
+
+If you got this far, you probably like TypeScript just like I do,
+I have created a course to teach TypeScript together with Socket.IO so please check it out.
+
+[![TypeScript SocketIO Introduction](tssock-course.png)](https://youtu.be/3uLSNctzkkw)
+
 
