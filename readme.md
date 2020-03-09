@@ -1,8 +1,8 @@
 ## Seans-TypeScript-NodeJS-CRUD-REST-API-Boilerplate 
 
-> To help support this TypeScript boilerplate, please take a moment to look at my official TypeScript courses in 
-<img src="threejs-course-image-64x36.gif" style="height:24px;margin-bottom:-4px"> [Three.js and TypeScript](https://www.udemy.com/course/threejs-tutorials/?referralCode=4C7E1DE91C3E42F69D0F) and
-<img src="tssock-course_64x36.gif" style="height:24px;margin-bottom:-4px"> [Socket.IO and TypeScript](https://www.udemy.com/course/typescript-socketio/?referralCode=2F6E227AC7EB9D147327)
+> To help support this TypeScript boilerplate, please take a moment to look at my official TypeScript courses in <br/>  
+  <img src="threejs-course-image-64x36.gif" style="height:24px;margin-bottom:-4px"> [Three.js and TypeScript](https://www.udemy.com/course/threejs-tutorials/?referralCode=4C7E1DE91C3E42F69D0F) and <br/>  
+  <img src="tssock-course_64x36.gif" style="height:24px;margin-bottom:-4px"> [Socket.IO and TypeScript](https://www.udemy.com/course/typescript-socketio/?referralCode=2F6E227AC7EB9D147327)
 
 
 ### MIT License
