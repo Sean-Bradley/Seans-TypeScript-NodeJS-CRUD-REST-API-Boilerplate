@@ -92,4 +92,3 @@ class Router {
     }
 }
 exports.default = Router;
-//# sourceMappingURL=router.js.map
