@@ -1,10 +1,14 @@
 FROM node:alpine
 
+<<<<<<< HEAD
 LABEL https://github.com/Sean-Bradley
+=======
+LABEL github=https://github.com/Sean-Bradley
+>>>>>>> master
 
+COPY src /nodejs/src
 COPY package.json /nodejs/package.json
 COPY tsconfig.json /nodejs/tsconfig.json
-COPY dist /nodejs/dist
 
 WORKDIR /nodejs
 

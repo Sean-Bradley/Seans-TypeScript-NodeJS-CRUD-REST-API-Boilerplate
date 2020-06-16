@@ -1,5 +1,17 @@
 ## Seans-TypeScript-NodeJS-CRUD-REST-API-Boilerplate 
 
+> To help support this TypeScript boilerplate, please take a moment to look at my official TypeScript courses in <br/>  
+  <img src="docs/threejs-course-image-43x24.gif" style="margin-bottom:-4px"> [Three.js and TypeScript](https://www.udemy.com/course/threejs-tutorials/?referralCode=4C7E1DE91C3E42F69D0F) and <br/>  
+  <img src="docs/tssock-course_43x24.gif" style="margin-bottom:-4px"> [Socket.IO and TypeScript](https://www.udemy.com/course/typescript-socketio/?referralCode=2F6E227AC7EB9D147327)
+
+
+### MIT License
+Remember, No guarantees, or even fit for a particular purpose.
+
+If you have a suggestion, or you want to contribute some code, you can make a pull request.
+
+Your contributions will be visible since this project is public.
+
 ### Setup
 
 ```bash
@@ -66,4 +78,22 @@ https://seans-typescript-nodejs-crud.herokuapp.com/swagger
 
 ### Delete Record
 ![Example Delete](docs/delete-example.png)
+
+# TypeScript Courses
+
+If you got this far, you probably like TypeScript just like I do,
+I have created two TypeScript courses specializing in the [Three.js](https://www.udemy.com/course/threejs-tutorials/?referralCode=4C7E1DE91C3E42F69D0F) and [Socket.IO](https://www.udemy.com/course/typescript-socketio/?referralCode=2F6E227AC7EB9D147327)
+ libraries that you may find useful.
+
+## Threejs and TypeScript Course
+
+[![TypeScript Threejs Introduction](docs/threejs-course-image.png)](https://youtu.be/BcF3yuVqfwo)
+
+## Socket.io and TypeScript Course
+
+[![TypeScript SocketIO Introduction](docs/tssock-course.png)](https://youtu.be/3uLSNctzkkw)
+
+
+
+
 
