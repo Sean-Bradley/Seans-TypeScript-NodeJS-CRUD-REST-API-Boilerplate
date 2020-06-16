@@ -25,12 +25,6 @@
             "description": "API for cats in the system"
         }
     ],
-    "consumes": [
-        "application/json"
-    ],
-    "produces": [
-        "application/json"
-    ],
     "paths": {
         "/cats": {
             "get": {
@@ -42,7 +36,7 @@
                     "200": {
                         "description": "OK",
                         "schema": {
-                            "$ref": "#/definitions/Cats"
+                            "$ref": "#/components/schemas/Cats"
                         }
                     }
                 }
@@ -58,7 +52,7 @@
                     "content": {
                         "application/json": {
                             "schema": {
-                                "$ref": "#/definitions/Cat"
+                                "$ref": "#/components/schemas/Cat"
                             }
                         }
                     }
@@ -70,7 +64,7 @@
                     "200": {
                         "description": "OK",
                         "schema": {
-                            "$ref": "#/definitions/id"
+                            "$ref": "#/components/schemas/id"
                         }
                     },
                     "400": {
@@ -101,7 +95,7 @@
                         "required": true,
                         "description": "Cat with id",
                         "schema": {
-                            "$ref": "#/definitions/id"
+                            "$ref": "#/components/schemas/id"
                         }
                     }
                 ],
@@ -109,7 +103,7 @@
                     "200": {
                         "description": "OK",
                         "schema": {
-                            "$ref": "#/definitions/Cat"
+                            "$ref": "#/components/schemas/Cat"
                         }
                     },
                     "404": {
@@ -128,7 +122,7 @@
                     "content": {
                         "application/json": {
                             "schema": {
-                                "$ref": "#/definitions/Cat"
+                                "$ref": "#/components/schemas/Cat"
                             }
                         }
                     }
@@ -140,7 +134,7 @@
                         "required": true,
                         "description": "Cat with new values of properties",
                         "schema": {
-                            "$ref": "#/definitions/id"
+                            "$ref": "#/components/schemas/id"
                         }
                     }
                 ],
@@ -148,7 +142,7 @@
                     "200": {
                         "description": "OK",
                         "schema": {
-                            "$ref": "#/definitions/Cat"
+                            "$ref": "#/components/schemas/Cat"
                         }
                     },
                     "400": {
@@ -171,7 +165,7 @@
                         "required": true,
                         "description": "Delete Cat with id",
                         "schema": {
-                            "$ref": "#/definitions/id"
+                            "$ref": "#/components/schemas/id"
                         }
                     }
                 ],
@@ -179,7 +173,7 @@
                     "200": {
                         "description": "OK",
                         "schema": {
-                            "$ref": "#/definitions/id"
+                            "$ref": "#/components/schemas/id"
                         }
                     },
                     "404": {
@@ -189,38 +183,40 @@
             }
         }
     },
-    "definitions": {
-        "id": {
-            "properties": {
-                "uuid": {
-                    "type": "string"
+    "components": {
+        "schemas": {
+            "id": {
+                "properties": {
+                    "uuid": {
+                        "type": "string"
+                    }
                 }
-            }
-        },
-        "Cat": {
-            "type": "object",
-            "properties": {
-                "genus": {
-                    "type": "string"
-                },
-                "name": {
-                    "type": "string"
-                },
-                "isHungry": {
-                    "type": "boolean"
-                },
-                "lastFedDate": {
-                    "type": "string"
+            },
+            "Cat": {
+                "type": "object",
+                "properties": {
+                    "genus": {
+                        "type": "string"
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "isHungry": {
+                        "type": "boolean"
+                    },
+                    "lastFedDate": {
+                        "type": "string"
+                    }
                 }
-            }
-        },
-        "Cats": {
-            "type": "object",
-            "properties": {
-                "cats": {
-                    "type": "object",
-                    "additionalProperties": {
-                        "$ref": "#/definitions/Cat"
+            },
+            "Cats": {
+                "type": "object",
+                "properties": {
+                    "cats": {
+                        "type": "object",
+                        "additionalProperties": {
+                            "$ref": "#/components/schemas/Cat"
+                        }
                     }
                 }
             }
