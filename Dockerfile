@@ -1,10 +1,10 @@
 FROM node:alpine
 
-LABEL https://github.com/Sean-Bradley
+LABEL github=https://github.com/Sean-Bradley
 
+COPY src /nodejs/src
 COPY package.json /nodejs/package.json
 COPY tsconfig.json /nodejs/tsconfig.json
-COPY dist /nodejs/dist
 
 WORKDIR /nodejs
 

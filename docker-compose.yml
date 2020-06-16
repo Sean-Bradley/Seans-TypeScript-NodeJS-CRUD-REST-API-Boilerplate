@@ -12,8 +12,9 @@ services:
       
   nodejs:
     build:
-      context: .
+      context: .      
       dockerfile: Dockerfile
+    image: service-cats:1.01
     expose:
       - "3000"
     command: npm start
