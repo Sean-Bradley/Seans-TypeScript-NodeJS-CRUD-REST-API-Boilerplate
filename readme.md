@@ -1,8 +1,11 @@
 ## Seans-TypeScript-NodeJS-CRUD-REST-API-Boilerplate
 
-> To help support this TypeScript boilerplate, please take a moment to look at my official TypeScript courses in <br/>  
->  <img src="docs/threejs-course-image-43x24.gif" style="margin-bottom:-4px"> [Three.js and TypeScript](https://www.udemy.com/course/threejs-tutorials/?referralCode=4C7E1DE91C3E42F69D0F) and <br/>  
->  <img src="docs/tssock-course_43x24.gif" style="margin-bottom:-4px"> [Socket.IO and TypeScript](https://www.udemy.com/course/typescript-socketio/?referralCode=2F6E227AC7EB9D147327)
+> To help support this TypeScript boilerplate, please take a moment to look at my official **Design Patterns in TypeScript** book and **TypeScript Courses**. <br/>  
+>  <img src="docs/threejs-course-image-w100.png" style="margin-bottom:-4px"> [Three.js and TypeScript](https://www.udemy.com/course/threejs-tutorials/?referralCode=4C7E1DE91C3E42F69D0F) and
+>
+>  <img src="docs/tssock-course-w100.png" style="margin-bottom:-4px"> [Socket.IO and TypeScript](https://www.udemy.com/course/typescript-socketio/?referralCode=2F6E227AC7EB9D147327)
+>
+>  <img src="docs/dp-in-typescript_w100.png"> Paperback : [ASIN B0948BCH24](https://www.amazon.com/dp/B0948BCH24), eBook : [ASIN B094716FD6](https://www.amazon.com/dp/B094716FD6)
 
 ### MIT License
 
@@ -98,18 +101,18 @@ libraries that you may find useful.
 
 To help support my TypeScript projects, please check out my book titled **Design Patterns in TypeScript**.
 
-<img style="float:left; min-width:150px;" src="/img/dp-in-typescript.jpg">
+<img style="float:left; min-width:150px;" src="/docs/dp-in-typescript.jpg">
 
-&nbsp;<a href="https://www.amazon.com/dp/B0948BCH24"><img src="/img/flag_us.gif">&nbsp; https://www.amazon.com/dp/B0948BCH24</a><br/>
-&nbsp;<a href="https://www.amazon.co.uk/dp/B0948BCH24"><img src="/img/flag_uk.gif">&nbsp; https://www.amazon.co.uk/dp/B0948BCH24</a><br/>
-&nbsp;<a href="https://www.amazon.in/dp/B094716FD6"><img src="/img/flag_in.gif">&nbsp; https://www.amazon.in/dp/B094716FD6</a><br/>
-&nbsp;<a href="https://www.amazon.de/dp/B0948BCH24"><img src="/img/flag_de.gif">&nbsp; https://www.amazon.de/dp/B0948BCH24</a><br/>
-&nbsp;<a href="https://www.amazon.fr/dp/B0948BCH24"><img src="/img/flag_fr.gif">&nbsp; https://www.amazon.fr/dp/B0948BCH24</a><br/>
-&nbsp;<a href="https://www.amazon.es/dp/B0948BCH24"><img src="/img/flag_es.gif">&nbsp; https://www.amazon.es/dp/B0948BCH24</a><br/>
-&nbsp;<a href="https://www.amazon.it/dp/B0948BCH24"><img src="/img/flag_it.gif">&nbsp; https://www.amazon.it/dp/B0948BCH24</a><br/>
-&nbsp;<a href="https://www.amazon.co.jp/dp/B0948BCH24"><img src="/img/flag_jp.gif">&nbsp; https://www.amazon.co.jp/dp/B0948BCH24</a><br/>
-&nbsp;<a href="https://www.amazon.ca/dp/B0948BCH24"><img src="/img/flag_ca.gif">&nbsp; https://www.amazon.ca/dp/B0948BCH24</a><br/>
-&nbsp;<a href="https://www.amazon.com.au/dp/B094716FD6"><img src="/img/flag_au.gif">&nbsp; https://www.amazon.com.au/dp/B094716FD6</a>
+&nbsp;<a href="https://www.amazon.com/dp/B0948BCH24"><img src="/docs/flag_us.gif">&nbsp; https://www.amazon.com/dp/B0948BCH24</a><br/>
+&nbsp;<a href="https://www.amazon.co.uk/dp/B0948BCH24"><img src="/docs/flag_uk.gif">&nbsp; https://www.amazon.co.uk/dp/B0948BCH24</a><br/>
+&nbsp;<a href="https://www.amazon.in/dp/B094716FD6"><img src="/docs/flag_in.gif">&nbsp; https://www.amazon.in/dp/B094716FD6</a><br/>
+&nbsp;<a href="https://www.amazon.de/dp/B0948BCH24"><img src="/docs/flag_de.gif">&nbsp; https://www.amazon.de/dp/B0948BCH24</a><br/>
+&nbsp;<a href="https://www.amazon.fr/dp/B0948BCH24"><img src="/docs/flag_fr.gif">&nbsp; https://www.amazon.fr/dp/B0948BCH24</a><br/>
+&nbsp;<a href="https://www.amazon.es/dp/B0948BCH24"><img src="/docs/flag_es.gif">&nbsp; https://www.amazon.es/dp/B0948BCH24</a><br/>
+&nbsp;<a href="https://www.amazon.it/dp/B0948BCH24"><img src="/docs/flag_it.gif">&nbsp; https://www.amazon.it/dp/B0948BCH24</a><br/>
+&nbsp;<a href="https://www.amazon.co.jp/dp/B0948BCH24"><img src="/docs/flag_jp.gif">&nbsp; https://www.amazon.co.jp/dp/B0948BCH24</a><br/>
+&nbsp;<a href="https://www.amazon.ca/dp/B0948BCH24"><img src="/docs/flag_ca.gif">&nbsp; https://www.amazon.ca/dp/B0948BCH24</a><br/>
+&nbsp;<a href="https://www.amazon.com.au/dp/B094716FD6"><img src="/docs/flag_au.gif">&nbsp; https://www.amazon.com.au/dp/B094716FD6</a>
 
 (ASIN : B0948BCH24 / B094716FD6)
 
