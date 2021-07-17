@@ -116,8 +116,6 @@ To help support my TypeScript projects, please check out my book titled **Design
 
 (ASIN : B0948BCH24 / B094716FD6)
 
-All the code examples in the book can be found in these pages.
-
 ---
 
 Thanks
