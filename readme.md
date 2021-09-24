@@ -99,11 +99,33 @@ libraries that you may find useful.
 
 [![TypeScript SocketIO Introduction](docs/tssock-course.png)](https://youtu.be/3uLSNctzkkw)
 
-# Design Patterns In TypeScript
+# Programming Books
 
-To help support my TypeScript projects, please check out my book titled **Design Patterns in TypeScript**.
+To help support my projects, please check out my books.
 
-<img style="float:left; min-width:150px;" src="/docs/dp-in-typescript.jpg">
+## Three.js and TypeScript
+
+<img style="float:left; min-width:150px;" src="./docs/threejs-typescript-250.jpg">
+
+&nbsp;<a href="https://www.amazon.com/dp/B09GYTKRCH"><img src="/docs/flag_us.gif">&nbsp; https://www.amazon.com/dp/B09GYTKRCH</a><br/>
+&nbsp;<a href="https://www.amazon.co.uk/dp/B09GYTKRCH"><img src="/docs/flag_uk.gif">&nbsp; https://www.amazon.co.uk/dp/B09GYTKRCH</a><br/>
+&nbsp;<a href="https://www.amazon.in/dp/B09GYTKRCH"><img src="/docs/flag_in.gif">&nbsp; https://www.amazon.in/dp/B09GYTKRCH</a><br/>
+&nbsp;<a href="https://www.amazon.de/dp/B09GYTKRCH"><img src="/docs/flag_de.gif">&nbsp; https://www.amazon.de/dp/B09GYTKRCH</a><br/>
+&nbsp;<a href="https://www.amazon.fr/dp/B09GYTKRCH"><img src="/docs/flag_fr.gif">&nbsp; https://www.amazon.fr/dp/B09GYTKRCH</a><br/>
+&nbsp;<a href="https://www.amazon.es/dp/B09GYTKRCH"><img src="/docs/flag_es.gif">&nbsp; https://www.amazon.es/dp/B09GYTKRCH</a><br/>
+&nbsp;<a href="https://www.amazon.it/dp/B09GYTKRCH"><img src="/docs/flag_it.gif">&nbsp; https://www.amazon.it/dp/B09GYTKRCH</a><br/>
+&nbsp;<a href="https://www.amazon.nl/dp/B09GYTKRCH"><img src="/docs/flag_nl.gif">&nbsp; https://www.amazon.nl/dp/B09GYTKRCH</a><br/>
+&nbsp;<a href="https://www.amazon.co.jp/dp/B09GYTKRCH"><img src="/docs/flag_jp.gif">&nbsp; https://www.amazon.co.jp/dp/B09GYTKRCH</a><br/>
+&nbsp;<a href="https://www.amazon.ca/dp/B09GYTKRCH"><img src="/docs/flag_ca.gif">&nbsp; https://www.amazon.ca/dp/B09GYTKRCH</a><br/>
+&nbsp;<a href="https://www.amazon.com.br/dp/B09GYTKRCH"><img src="/docs/flag_br.gif">&nbsp; https://www.amazon.com.br/dp/B09GYTKRCH</a><br/>
+&nbsp;<a href="https://www.amazon.com.mx/dp/B09GYTKRCH"><img src="/docs/flag_mx.gif">&nbsp; https://www.amazon.com.mx/dp/B09GYTKRCH</a><br/>
+&nbsp;<a href="https://www.amazon.com.au/dp/B09GYTKRCH"><img src="/docs/flag_au.gif">&nbsp; https://www.amazon.com.au/dp/B09GYTKRCH</a>
+
+(ASIN : B09GYTKRCH)
+
+**Design Patterns in TypeScript**.
+
+<img style="float:left; min-width:150px;" src="/docs/dp_typescript_250.jpg">
 
 &nbsp;<a href="https://www.amazon.com/dp/B0948BCH24"><img src="/docs/flag_us.gif">&nbsp; https://www.amazon.com/dp/B0948BCH24</a><br/>
 &nbsp;<a href="https://www.amazon.co.uk/dp/B0948BCH24"><img src="/docs/flag_uk.gif">&nbsp; https://www.amazon.co.uk/dp/B0948BCH24</a><br/>
