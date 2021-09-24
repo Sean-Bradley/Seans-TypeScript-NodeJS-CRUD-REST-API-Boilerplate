@@ -3,9 +3,11 @@
 > To help support this TypeScript boilerplate, please take a moment to look at my official **Design Patterns in TypeScript** book and **TypeScript Courses**. <br/>  
 >  <img src="docs/threejs-course-image-w100.png" style="margin-bottom:-4px"> [Three.js and TypeScript](https://www.udemy.com/course/threejs-tutorials/?referralCode=4C7E1DE91C3E42F69D0F)
 >
->  <img src="docs/tssock-course-w100.png" style="margin-bottom:-4px"> [Socket.IO and TypeScript](https://www.udemy.com/course/typescript-socketio/?referralCode=2F6E227AC7EB9D147327)
+> <img src="docs/tssock-course-w100.png" style="margin-bottom:-4px"> [Socket.IO and TypeScript](https://www.udemy.com/course/typescript-socketio/?referralCode=2F6E227AC7EB9D147327)
 >
->  <img src="docs/dp-in-typescript_w100.png"> Paperback : [ASIN B0948BCH24](https://www.amazon.com/dp/B0948BCH24), eBook : [ASIN B094716FD6](https://www.amazon.com/dp/B094716FD6)
+> <img src="docs/threejs_typescript_116.jpg"> Three.js and TypeScript : [ASIN B094716FD6](https://www.amazon.com/dp/B09GYTKRCH)
+>
+> <img src="docs/dp_typescript_116.jpg"> Design Patterns in TypeScript : Paperback [ASIN B0948BCH24](https://www.amazon.com/dp/B0948BCH24), eBook : [ASIN B094716FD6](https://www.amazon.com/dp/B094716FD6)
 
 ### MIT License
 
