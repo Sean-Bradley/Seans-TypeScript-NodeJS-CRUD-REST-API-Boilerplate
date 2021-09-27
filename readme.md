@@ -121,7 +121,7 @@ To help support my projects, please check out my books.
 &nbsp;<a href="https://www.amazon.com.mx/dp/B09GYTKRCH"><img src="/docs/flag_mx.gif">&nbsp; https://www.amazon.com.mx/dp/B09GYTKRCH</a><br/>
 &nbsp;<a href="https://www.amazon.com.au/dp/B09GYTKRCH"><img src="/docs/flag_au.gif">&nbsp; https://www.amazon.com.au/dp/B09GYTKRCH</a>
 
-(ASIN : B09GYTKRCH)
+(ASIN : B09GZM9KGJ / B09GYTKRCH)
 
 **Design Patterns in TypeScript**.
 
